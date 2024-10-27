@@ -1,4 +1,3 @@
-
 {
   "name": "combined-project",
   "version": "1.0.0",
@@ -6,7 +5,8 @@
   "scripts": {
     "start": "concurrently \"npm run frontend\" \"npm run backend\"",
     "frontend": "cd src/frontend && npm start",
-    "backend": "cd src/backend_folder && npm start"
+    "backend": "cd src/backend_folder && npm start",
+    "postinstall": "npm install concurrently"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -54,8 +54,8 @@
       "last 1 safari version"
     ]
   },
-  "scripts": {
-    "postinstall": "npm install concurrently"
-  }
-
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
