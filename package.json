@@ -54,7 +54,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "concurrently": "^6.5.1"
+  "scripts": {
+    "postinstall": "npm install concurrently"
   }
+
 }
