@@ -1,0 +1,77 @@
+{
+  "Header": {
+    "title": "Wellness Center",
+    "paragraph": "Your trusted source for counseling and physical health support. Dedicated to your well-being and recovery."
+  },
+  "About": {
+    "paragraph": "Our Wellness Center provides a safe and supportive environment to address physical health issues and offer professional counseling services. We are here to assist you with compassionate care and a focus on holistic well-being.",
+    "Why": [
+      "Professional Counseling Services",
+      "Personalized Physical Health Care",
+      "Confidential and Compassionate Support",
+      "Holistic Approach to Wellness"
+    ],
+    "Why2": [
+      "Experienced Health Professionals",
+      "A Focus on Mental Health",
+      "Supportive Environment",
+      "Evidence-Based Approaches"
+    ]
+  },
+  
+  "Services": [
+    {
+      "icon": "fa fa-heartbeat",
+      "name": "Physical Health Care",
+      "text": "Comprehensive care for all physical health concerns, with a team of dedicated professionals to support your well-being."
+    },
+    {
+      "icon": "fa fa-comments",
+      "name": "Counseling Services",
+      "text": "Professional counseling to help you navigate mental health challenges with confidentiality and compassion."
+    },
+    {
+      "icon": "fa fa-ambulance",
+      "name": "Ambulance Services",
+      "text": "24/7 emergency ambulance services to ensure prompt medical support and transport when needed."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"The counseling team at the Wellness Center helped me find clarity and peace. Their care and compassion were truly remarkable.\"",
+      "name": "Alex M."
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"I felt genuinely cared for during my physical health treatment at the center. I highly recommend their services.\"",
+      "name": "Jordan P."
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"The ambulance services were a lifesaver. Their prompt response and professionalism made all the difference in a critical time.\"",
+      "name": "Chris K."
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Dr. Jamie Lee",
+      "job": "Chief Counselor"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Dr. Taylor Smith",
+      "job": "Physical Health Specialist"
+    }
+  ],
+  
+  
+  "Map": [
+    {
+      "icon": "fa fa-location-arrow",
+      "title": "Our Location",
+      "text": "Find us in the heart of campus, ready to serve the wellness needs of our community."
+    }
+  ]
+}

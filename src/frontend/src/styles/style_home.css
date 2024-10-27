@@ -1,0 +1,988 @@
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+  color: #608dfd;
+  font-weight: 400;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #608dfd;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+/* Navigation */
+#menu.navbar-default {
+  background-color: #fff;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex; 
+  flex-direction: row;
+}
+
+
+#menu a.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+#menu .navbar-header {
+  display: flex; /* Flexbox for alignment */
+  align-items: left; /* Center vertically */
+  flex-direction: row;
+}
+
+#menu .container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between; /* Space between brand and nav items */
+  align-items: center; /* Align items vertically */
+}
+
+#menu.navbar-default .navbar-nav {
+  display: flex; /* Flexbox for horizontal alignment */
+  align-items: left; /* Center items vertically */
+  margin: 0; /* Remove default margins */
+  flex-direction: row;
+}
+
+#menu.navbar-default .navbar-nav > li {
+  list-style: none; /* Remove default list styling */
+  margin-left: 20px;
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 15px; /* Padding for better clickability */
+  border-radius: 0;
+  position: relative; /* Ensure pseudo-elements position correctly */
+  transition: color 0.2s; /* Smooth color transition */
+  display: flex; 
+  flex-direction: row;
+}
+
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  content: "";
+  transition: width 0.2s;
+  display: flex; 
+  flex-direction: row;
+}
+
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%;
+  display: flex; 
+  flex-direction: row; 
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  display: flex; 
+  flex-direction: row; 
+}
+
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  content: "" !important;
+  transition: width 0.2s !important;
+  display: flex; 
+  flex-direction: row;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #608dfd;
+}
+
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #608dfd;
+}
+
+/* Style for the login button */
+.login-button {
+  border: none; /* Remove default border */
+  background-color: #608dfd; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.2s; /* Smooth background transition */
+}
+
+.login-button:hover {
+  background-color: #5ca9fb; /* Lighter color on hover */
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px;
+}
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5ca9fb;
+  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: #6372ff;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url(../../public/img/intro-bg.jpg) center center no-repeat;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+.intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+header .intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+/* admin.css */
+
+/* Styles for the custom links */
+.link-container {
+  margin-top: 20px; /* Space above the links */
+}
+
+.custom-link {
+  text-decoration: none; /* Remove underline */
+  color: #ccc; /* Primary link color */
+  font-weight: bold; /* Bold links */
+  font-size: 20px;
+}
+
+.custom-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #007bff; /* Darker color on hover */
+}
+
+.separator {
+  color: #ccc; /* Color for the separator */
+  font-size: 20px;
+  margin: 0 20px; /* Space around the separator */
+}
+
+
+/* Features Section */
+#features {
+  background: #f6f6f6;
+}
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+/* About Section */
+#about {
+  padding: 100px 0;
+}
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+/* Services Section */
+#services {
+  padding: 100px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+}
+#services .service-desc {
+  margin: 10px 10px 20px;
+}
+#services h2 {
+  color: #fff;
+}
+#services .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#services h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#services .service-desc {
+  margin-bottom: 40px;
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+}
+.portfolio-item {
+  margin: 1px -15px 0 -14px;
+  padding: 0;
+}
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(99, 114, 255, 0.8) 0%,
+    rgba(92, 169, 251, 0.8) 100%
+  );
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+/* Team Section */
+#team {
+  padding: 100px 0;
+}
+#team h4 {
+  margin: 5px 0;
+}
+#team .team-img {
+  width: 240px;
+}
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+/* Contact Section */
+#contact {
+  padding: 100px 0 60px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact .section-title {
+  margin-bottom: 40px;
+}
+#contact .section-title p {
+  font-size: 16px;
+}
+#contact h2 {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#contact .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 30px;
+}
+#contact h3 {
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+#contact form {
+  padding-top: 20px;
+}
+#contact .text-danger {
+  color: #cc0033;
+  text-align: left;
+}
+#contact .btn-custom {
+  margin: 30px 0;
+  background: transparent;
+  border: 2px solid #fff;
+}
+#contact .btn-custom:hover {
+  color: #1f386e;
+  background: #fff;
+}
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  float: left;
+}
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#contact .form-control:focus {
+  border-color: #999;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+  color: #777;
+}
+.form-control:-moz-placeholder {
+  color: #777;
+}
+.form-control::-moz-placeholder {
+  color: #777;
+}
+.form-control:-ms-input-placeholder {
+  color: #777;
+}
+#contact .contact-item {
+  margin: 20px 0;
+}
+#contact .contact-item span {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+  display: block;
+}
+#contact .contact-item i.fa {
+  margin-right: 10px;
+}
+#contact .social {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+#contact .social i.fa {
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  padding: 12px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#contact .social i.fa:hover {
+  color: #608dfd;
+  background: #fff;
+}
+/* Footer Section*/
+#footer {
+  background: #f6f6f6; /* Light gray background for the footer */
+  padding: 30px 0; /* Padding to create space above and below footer content */
+  width: 100%; /* Ensure the footer takes the full width of the viewport */
+  position: relative; /* Helps manage layout and positioning */
+  left: 0; /* Align footer to the left */
+  right: 0; /* Align footer to the right */
+  font-size: 16px;
+}
+
+#footer p {
+  color: #888; /* Gray color for paragraph text */
+  font-size: 14px; /* Font size for paragraphs */
+  font-size: 16px;
+}
+
+#footer a {
+  color: #608dfd; /* Blue color for links */
+  font-size: 16px;
+}
+
+#footer a:hover {
+  border-bottom: 2px solid #608dfd; /* Underline effect on hover */
+}
+
+
+.logo {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.map-container {
+  margin: 20px 0;  /* Add some spacing around the map */
+  text-align: center; /* Center the heading */
+}
+
+.login-button {
+  background-color: #007bff; /* Adjust color */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px; /* Higher value for oval */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+  background-color: #0056b3; /* Darken background on hover */
+}
+
+/* General Page Styles */
+#loginpage body {
+  background-color: #f8f9fa;
+}
+
+/* Login Container Styles */
+#loginpage .login-container {
+  margin: auto;
+  box-shadow: 1.5px 3.99px 27px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.72);
+  border-radius: 8px; /* Added border-radius for better aesthetics */
+  display: flex;
+  flex-direction: row; /* Align the image and form side by side */
+}
+
+@media screen and (max-width: 991px) {
+  #loginpage .login-container {
+    flex-direction: column; /* Stack image and form vertically on small screens */
+    margin-bottom: 5%;
+  }
+}
+
+/* Image Box Styles */
+#loginpage .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the image horizontally */
+  margin: auto; /* Center the image container within the parent */
+  padding: 20px; /* Add padding if needed */
+}
+
+#loginpage .img-box img {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto;
+}
+
+
+/* Card Title Styles */
+#loginpage .card-title {
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+#loginpage .btn {
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px; /* Added padding for better click area */
+  font-size: 1rem; /* Adjusted font size */
+  background-color: #007bff; /* Primary color */
+  border: none; /* Removed border */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  width: 100%; /* Make button take full width */
+  max-width: 300px; /* Set a maximum width for the button */
+  margin: 20px auto 0; /* Center the button and add margin */
+}
+
+#loginpage .btn:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#loginpage .btn:active {
+  background-color: #004494; /* Even darker color on active */
+  transform: translateY(0); /* Reset lift effect on active */
+}
+
+/* Nav Tabs Styles */
+#loginpage .nav-tabs {
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: center; /* Center the nav tabs */
+}
+
+#loginpage .nav-tabs .nav-item {
+  margin-bottom: -1px; /* Align the tab items properly */
+  font-family: 'Roboto', sans-serif;
+}
+
+#loginpage .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #007bff;
+  background-color: transparent; /* Ensure background is transparent */
+  padding: 10px 20px; /* Added padding for better click area */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
+}
+
+#loginpage .nav-tabs .nav-link.active,
+#loginpage .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #007bff;
+  color: #0056b3; /* Darker color on hover for better feedback */
+  cursor: pointer;
+}
+
+/* Card Body Styles */
+#loginpage .card-body {
+  padding: 60px 50px;
+  border-left: 1px solid #cccccc5e;
+  margin: auto;
+  max-width: 500px; /* Set a maximum width for the card body */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+
+}
+
+#loginpage .card-body h1 {
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center; /* Centered text for better alignment */
+  font-family: 'Roboto', sans-serif;
+}
+
+#loginpage .card-body .form-group {
+  margin-top: 25px;
+  width: 100%; /* Make form group take full width */
+}
+
+#loginpage .card-body .form-group input {
+  margin-bottom: 0px;
+  padding: 10px; /* Added padding for better usability */
+  width: 100%; /* Make input take full width */
+}
+
+#loginpage .card-body .btnroo .btn {
+  margin-right: 15px;
+  border-radius: 50px;
+  width: 120px;
+}
+
+#loginpage .card-body label {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: black;
+  display: block; /* Ensuring labels take full width */
+}
+
+#loginpage .card-body label i {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 3px;
+}
+
+#loginpage .card-body input {
+  border: 0px;
+  text-align: center;
+  border-radius: 0px;
+  color: black;
+  border-bottom: 1px solid #CCC;
+  background-color: #fcfbfc98;
+  margin-top: -23px;
+  width: 100%; /* Ensuring input takes full width */
+}
+
+#loginpage .card-body input:focus {
+  border: 0px !important;
+  border-bottom: 2px solid #5288f4 !important;
+  background-color: #fcfbfc1f !important;
+  margin-top: 0px;
+  transition: 0.1s ease;
+}
+/* Background for the register page */
+#register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height */
+  background: linear-gradient(
+    rgba(14, 29, 52, 0.8),
+    rgba(14, 29, 52, 0.6)
+  )
+}
+
+/* Register Card Styles */
+.register-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  max-width: 400px; /* Maximum width for the card */
+  width: 100%; /* Full width on smaller screens */
+  padding: 30px; /* Padding inside the card */
+  animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+/* Heading Styles */
+.register-card h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 28px; /* Font size */
+}
+
+/* Form Group Styles */
+.register-card .form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Input Field Styles */
+.register-card .form-control {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Standard border */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.register-card .form-control:focus {
+  border-color: #5288f4; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+.register-card .btn {
+  border-radius: 25px; /* Rounded button corners */
+  padding: 10px; /* Button padding */
+  font-size: 1rem; /* Button font size */
+  background-color: #007bff; /* Primary button color */
+  border: none; /* Remove border */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  width: 100%; /* Full width button */
+  margin-top: 15px; /* Space above the button */
+}
+
+.register-card .btn:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.register-card .btn:active {
+  background-color: #004494; /* Even darker color on active */
+  transform: translateY(0); /* Reset lift effect on active */
+}
+
+/* Sign In Link Styles */
+.register-card a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+.register-card a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Animation for the Card */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  #about img {
+    margin: 50px 0;
+  }
+}
