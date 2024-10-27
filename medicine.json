@@ -1,0 +1,410 @@
+[
+  {
+    "name": "Oxygen gas",
+    "form": "for inhalation",
+    "strength": null,
+    "instructions": null,
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Lignocaine",
+    "form": ["Topical forms 5%", "Injection"],
+    "strength": ["5%", "plain"],
+    "instructions": "Injection can be kept at SC if enough caseload is there",
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Aspirin (Acetylsalicylic acid)",
+    "form": "Tablet",
+    "strength": "75 mg",
+    "instructions": "Not to be used in suspected dengue patients and other clinical conditions without prescription",
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Diclofenac",
+    "form": ["Tablet", "Injection"],
+    "strength": ["50 mg", "25 mg/ml"],
+    "instructions": null,
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Tablet",
+    "strength": "200 mg",
+    "instructions": "Not to be used in suspected dengue patients and other clinical conditions without prescription",
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Paracetamol",
+    "form": ["Tablet", "Syrup"],
+    "strength": ["250 mg", "125 mg/5ml", "250 mg/5ml"],
+    "instructions": null,
+    "category": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines",
+    "addition": null
+  },
+  {
+    "name": "Levocetirizine",
+    "form": ["Tablet", "Oral Liquid"],
+    "strength": "5 mg",
+    "instructions": null,
+    "category": "Anti-allergics and medicines used in anaphylaxis",
+    "addition": null
+  },
+  {
+    "name": "Hydrocortisone Succinate",
+    "form": "Injection",
+    "strength": "100 mg",
+    "instructions": null,
+    "category": "Anti-allergics and medicines used in anaphylaxis",
+    "addition": null
+  },
+  {
+    "name": "Pheniramine",
+    "form": "Injection",
+    "strength": "22.75 mg/ml",
+    "instructions": null,
+    "category": "Anti-allergics and medicines used in anaphylaxis",
+    "addition": null
+  },
+  {
+    "name": "Adrenaline",
+    "form": "Injection",
+    "strength": "1 mg/ml",
+    "instructions": "Should be part of all emergency drugs",
+    "category": "Anti-allergics and medicines used in anaphylaxis",
+    "addition": null
+  },
+  {
+    "name": "Atropine",
+    "form": "Injection",
+    "strength": "1 mg/ml",
+    "instructions": "Ampoules should be made available",
+    "category": "Anti-dotes and other substances used in poisoning",
+    "addition": null
+  },
+  {
+    "name": "Activated Charcoal",
+    "form": null,
+    "strength": null,
+    "instructions": null,
+    "category": "Anti-dotes and other substances used in poisoning",
+    "addition": null
+  },
+  {
+    "name": "Magnesium Sulfate",
+    "form": "Injection",
+    "strength": "50% solution, 2ml ampoule",
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Diazepam",
+    "form": ["Tablet", "Rectal suppository"],
+    "strength": ["5 mg", "10 mg"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": "Schedule H1 (Separate H1 Register shall be maintained- Name of drug, patient, prescriber Controlled medicine."
+  },
+  {
+    "name": "Midazolam",
+    "form": "Nasal Spray",
+    "strength": null,
+    "instructions": "For emergency purpose. Schedule H1 (Separate H1 Register shall be maintained- Name of drug, patient, prescriber and dispensed quantity shall be recorded)",
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Phenobarbitone",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["30 mg", "60 mg", "20 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Phenytoin",
+    "form": "Tablet",
+    "strength": ["50 mg", "300 mg"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Sodium valproate",
+    "form": ["Tablet", "Syrup"],
+    "strength": ["200 mg", "500 mg", "200 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Albendazole",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["400 mg", "200 mg/5 ml"],
+    "instructions": null,
+    "category": "Intestinal Anthelmintics",
+    "addition": null
+  },
+  {
+    "name": "Diethylcarbamazine",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["100 mg", "120 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-filarial",
+    "addition": null
+  },
+  {
+    "name": "Amoxicillin",
+    "form": ["Capsule", "Oral liquid", "Dispersible Tablet"],
+    "strength": ["250 mg", "500 mg", "250 mg/5 ml", "250 mg"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Gentamicin",
+    "form": "Injection",
+    "strength": ["10 mg/ml", "80 mg/ml"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Co-trimoxazole",
+    "form": ["Tablet", "Oral Liquid"],
+    "strength": [
+      "80 mg sulphamethoxazole + 400 mg trimethoprim",
+      "20 mg trimethoprim + 100 mg sulphamethoxazole",
+      "200 mg sulphamethoxazole + 40 mg trimethoprim/5 ml"
+    ],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Doxycycline",
+    "form": "Capsule",
+    "strength": "100 mg",
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Metronidazole",
+    "form": "Tablet",
+    "strength": ["200 mg", "400 mg"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Norfloxacin",
+    "form": ["Tablet", "Oral Liquid"],
+    "strength": null,
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Midazolam",
+    "form": "Nasal Spray",
+    "strength": null,
+    "instructions": "For emergency purpose. Schedule H1 (Separate H1 Register shall be maintained - Name of drug, patient, prescriber, and dispensed quantity shall be recorded)",
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Phenobarbitone",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["30 mg", "60 mg", "20 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Phenytoin",
+    "form": "Tablet",
+    "strength": ["50 mg", "300 mg"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Sodium valproate",
+    "form": ["Tablet", "Syrup"],
+    "strength": ["200 mg", "500 mg", "200 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-convulsants/ Anti-epileptics",
+    "addition": null
+  },
+  {
+    "name": "Albendazole",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["400 mg", "200 mg/5 ml"],
+    "instructions": null,
+    "category": "Intestinal Anthelmintics",
+    "addition": null
+  },
+  {
+    "name": "Diethylcarbamazine",
+    "form": ["Tablet", "Oral liquid"],
+    "strength": ["100 mg", "120 mg/5 ml"],
+    "instructions": null,
+    "category": "Anti-filarial",
+    "addition": null
+  },
+  {
+    "name": "Amoxicillin",
+    "form": ["Capsule", "Oral liquid", "Dispersible Tablet"],
+    "strength": ["250 mg", "500 mg", "250 mg/5 ml", "250 mg"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Gentamicin",
+    "form": "Injection",
+    "strength": ["10 mg/ml", "80 mg/ml"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Co-trimoxazole",
+    "form": ["Tablet", "Oral Liquid"],
+    "strength": [
+      "80 mg sulphamethoxazole + 400 mg trimethoprim",
+      "20 mg trimethoprim + 100 mg sulphamethoxazole",
+      "200 mg sulphamethoxazole + 40 mg trimethoprim/5 ml"
+    ],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Doxycycline",
+    "form": "Capsule",
+    "strength": "100 mg",
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Metronidazole",
+    "form": "Tablet",
+    "strength": ["200 mg", "400 mg"],
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Norfloxacin",
+    "form": ["Tablet", "Oral Liquid"],
+    "strength": null,
+    "instructions": null,
+    "category": "Anti-bacterial",
+    "addition": null
+  },
+  {
+    "name": "Ethyl alcohol (Denatured)",
+    "form": "Solution",
+    "strength": "70%",
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Hydrogen peroxide",
+    "form": "Solution",
+    "strength": "6%",
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Methylrosanilinium chloride (Gentian Violet)",
+    "form": null,
+    "strength": null,
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Bleaching powder",
+    "form": null,
+    "strength": "Containing not less than 30% w/w of available chlorine (as per I.P)",
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Gamma Benzene Hexachloride",
+    "form": null,
+    "strength": null,
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Framycetin sulphate",
+    "form": "Ointment",
+    "strength": null,
+    "instructions": null,
+    "category": "Disinfectants and antiseptics",
+    "addition": null
+  },
+  {
+    "name": "Ciprofloxacin",
+    "form": ["Drops", "Tablet"],
+    "strength": ["0.3%", "250 mg", "500 mg"],
+    "instructions": null,
+    "category": "Ear, nose and throat medicines",
+    "addition": null
+  },
+  {
+    "name": "Boro-Spirit",
+    "form": "Ear drop",
+    "strength": null,
+    "instructions": null,
+    "category": "Ear, nose and throat medicines",
+    "addition": null
+  },
+  {
+    "name": "Ear wax solvent drops",
+    "form": "Ear drops",
+    "strength": "Combination of Benzocaine, Chlorbutol, Paradichlorobenzene and Turpentine Oil",
+    "instructions": null,
+    "category": "Ear, nose and throat medicines",
+    "addition": null
+  },
+  {
+    "name": "Ranitidine",
+    "form": ["Tablet", "Injection"],
+    "strength": "150 mg",
+    "instructions": null,
+    "category": "Gastrointestinal medicines",
+    "addition": null
+  },
+  {
+    "name": "Omeprazole",
+    "form": "Capsule",
+    "strength": "20 mg",
+    "instructions": null,
+    "category": "Gastrointestinal medicines",
+    "addition": null
+  },
+  {
+    "name": "Ondansetron",
+    "form": ["Tablet", "Oral liquid", "Injection"],
+    "strength": ["4 mg", "2 mg/5 ml", "2 mg/ml"],
+    "instructions": null,
+    "category": "Gastrointestinal medicines",
+    "addition": null
+  }
+]
