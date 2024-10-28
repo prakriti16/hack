@@ -18,7 +18,7 @@ const BookAppointment = () => {
         const fetchProfile = async () => {
           try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/register/profile', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/register/profile`, {
               method: 'GET',
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ const BookAppointment = () => {
     useEffect(() => {
         const fetchData = async () => {
            
-            const response = await fetch('http://localhost:5000/api/schedule');
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/schedule`);
             if (!response.ok) throw new Error('Failed to fetch schedule');
         
             const data = await response.json();
@@ -81,7 +81,7 @@ const BookAppointment = () => {
 
 const fetchData = async () => {
     try {
-        const response = await fetch('http://localhost:5000/api/schedule');
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/schedule`);
         const data = response.ok ? await response.json() : []; // Use empty array if fetch fails
 
         // Transform the raw data if it's an array of arrays
@@ -203,7 +203,7 @@ const fetchData = async () => {
         console.log("Form submitted", { email, doctorName, date, timeSlot });
     
         try {
-            const response = await fetch('http://localhost:5000/api/book-appointment', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/book-appointment`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
