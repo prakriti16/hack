@@ -13,7 +13,7 @@ const AppointmentStudent = () => {
         const fetchProfile = async () => {
           try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/api/register/profile', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/register/profile`, {
               method: 'GET',
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -40,7 +40,7 @@ const AppointmentStudent = () => {
     }, [profile]);
     const fetchAppointments = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/userappointments');
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/userappointments`);
             const data = await response.json();
             const userAppointments = data.filter(
                 (appointment) => appointment.email === profile.email
@@ -84,7 +84,7 @@ const AppointmentStudent = () => {
     };
     const handleDelete = async (email, timeSlot) => {
         try {
-          const response = await axios.delete(`http://localhost:5000/api/${encodeURIComponent(email)}/${encodeURIComponent(timeSlot)}`);
+          const response = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/${encodeURIComponent(email)}/${encodeURIComponent(timeSlot)}`);
           fetchAppointments();
         } catch (error) {
           console.error('Error deleting item:', error);
