@@ -115,6 +115,9 @@ app.delete('/api/:email/:timeSlot', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+app.get('/', (req, res) => {
+  res.send("Welcome to the API");
+});
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
