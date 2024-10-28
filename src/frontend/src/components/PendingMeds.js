@@ -43,7 +43,7 @@ const PendingMedicines = () => {
 };
 const updatePatientInDatabase = async (patientId, updatedPatient) => {
   try {
-    await axios.put(`http://localhost:5000/api/pendingdb/${patientId}`, updatedPatient); 
+    await axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/pendingdb/${patientId}`, updatedPatient); 
   } catch (error) {
     console.error('Error updating patient:', error);
   }
@@ -57,7 +57,7 @@ const updatePatientInDatabase = async (patientId, updatedPatient) => {
 //Function to retrieve database information
   const fetchPatients = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/pendingdb');
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/pendingdb`);
       setPatient(response.data);
     } catch (error) {
       console.error('Error fetching patients:', error);
@@ -114,7 +114,7 @@ const updatePatientInDatabase = async (patientId, updatedPatient) => {
       try {
         console.log('New Patient data:', { ...newPatient, status });
         
-       const response = await axios.post('http://localhost:5000/api/pendingdb', { ...newPatient, status });
+       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/pendingdb`, { ...newPatient, status });
           console.log('Patient added:', response.data);
     
           setNewPatient({
