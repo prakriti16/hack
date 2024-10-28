@@ -25,7 +25,7 @@ const DoctorSchedule = () => {
       //Function to retrieve database information
         const fetchPatients = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/pendingdb');
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/pendingdb`);
             const data = await response.data;
             const userAppointments = data.filter(
                 (appointment) => appointment.email === profile.email
@@ -45,7 +45,7 @@ const DoctorSchedule = () => {
                 const patient = Patient.find(patient => patient._id === patientId); // Find patient by ID
                 const { email, date, doctor } = patient; // Extract email and date
           
-                const response = await fetch('http://localhost:5000/api/pendingdb/medicines', {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/pendingdb/medicines`, {
                   method: 'DELETE',
                   headers: {
                     'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const DoctorSchedule = () => {
             try {
                 const token = localStorage.getItem('token');
                 console.log("Token:", token);
-                const response = await fetch('http://localhost:5000/api/register/profile', {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/register/profile`, {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -111,7 +111,7 @@ const DoctorSchedule = () => {
     useEffect(() => {
         const fetchData = async () => {
            
-            const response = await fetch('http://localhost:5000/api/schedule');
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/schedule`);
             if (!response.ok) throw new Error('Failed to fetch schedule');
         
             const data = await response.json();
