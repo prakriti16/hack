@@ -40,7 +40,7 @@ const Registration = () => {
     e.preventDefault();
     try {
       // Attempt to send form data to the registration endpoint
-      const response = await axios.post('http://localhost:5000/api/register', formData);
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/register`, formData);
       if (response.status === 201) { // Assuming 201 is returned upon successful registration
         alert('Registration successful!');
         navigate('/login'); // Redirect to login page after registration
