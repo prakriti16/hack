@@ -28,7 +28,7 @@ const Medicinedb = () => {
 //Function to retrieve database information
   const fetchMedicines = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/medicinedb');
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/medicinedb`);
       setMedicine(response.data);
     } catch (error) {
       console.error('Error fetching medicines:', error);
@@ -58,7 +58,7 @@ const Medicinedb = () => {
       
       try {
         console.log('New Medicine data:', newMedicine);
-        const response = await axios.post('http://localhost:5000/api/medicinedb', newMedicine);
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/medicinedb`, newMedicine);
           console.log('Medicine added:', response.data);
     
           setNewMedicine({
@@ -86,7 +86,7 @@ const Medicinedb = () => {
   //function to delete any user
   const handleDeleteMedicine = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/medicinedb/${id}`);
+      await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/medicinedb/${id}`);
       setMedicine(medicines.filter(medicine => medicine._id !== id));
       fetchMedicines(); // Refresh the list after deletion
     } catch (error) {
