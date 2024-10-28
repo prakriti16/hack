@@ -14,7 +14,7 @@ const Appointment = () => {
         // Fetch the appointments from the API
         const fetchAppointments = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/appointments');
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/appointments`);
                 const data = await response.json();
                 setAppointments(data);
 
