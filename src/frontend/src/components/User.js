@@ -242,7 +242,7 @@ const fetchData = async () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [entriesPerPage, setEntriesPerPage] = useState(5);
+    const [entriesPerPage] = useState(5);
     const filteredMedicines = Patient.filter(medicine => {
         return Object.values(medicine).some(value =>
         String(value).toLowerCase().includes(searchTerm.toLowerCase())
@@ -261,9 +261,9 @@ const fetchData = async () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     // Function to handle search term change
-    const handleSearchChange = e => {
-        setSearchTerm(e.target.value);
-    };
+    // const handleSearchChange = e => {
+    //     setSearchTerm(e.target.value);
+    // };
     
     
     return (
