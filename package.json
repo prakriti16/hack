@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "frontend": "cd src/frontend && npm install && npm start",
-    "backend": "cd src/backend_folder && npm install && npm start",
+    "frontend": "cd src/frontend  && npm start",
+    "backend": "cd src/backend_folder  && npm start",
     "postinstall": "npm install concurrently"
   },
   "dependencies": {
