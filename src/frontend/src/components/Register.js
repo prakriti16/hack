@@ -2,19 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-import '../styles/style_home.css';
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBInput,
-    MDBIcon
-  }
-  from 'mdb-react-ui-kit';
-  
+import '../styles/style_home.css';  
 
 const Registration = () => {
   const [formData, setFormData] = useState({
