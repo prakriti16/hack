@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Tooltip } from 'bootstrap';
 import { Link } from 'react-router-dom';
-import { Dropdown, DropdownButton, Badge, Image } from 'react-bootstrap';
+import { Dropdown, DropdownButton, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -12,7 +12,6 @@ import '../styles/admin.css';
 import { useNavigate } from 'react-router-dom';
 
 const PendingMedicines = () => {
-  const navigate = useNavigate();
 
   const [Patient, setPatient] = useState([]);
 
@@ -69,9 +68,9 @@ const updatePatientInDatabase = async (patientId, updatedPatient) => {
     const { name, value } = e.target;
     setNewPatient({ ...newPatient, [name]: value });
   };
-  const handleDateChange = (date, name) => {
-    setNewPatient((prev) => ({ ...prev, [name]: date }));
-  };
+  // const handleDateChange = (date, name) => {
+  //   setNewPatient((prev) => ({ ...prev, [name]: date }));
+  // };
   const handleMedicineCheck = (index) => {
     // Toggle the checked state of the selected medicine
     const updatedMedicines = newPatient.medicines.map((med, idx) => 
@@ -169,9 +168,9 @@ const updatePatientInDatabase = async (patientId, updatedPatient) => {
 
   useEffect(() => {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
-      return new Tooltip(tooltipTriggerEl);
-    });
+    // const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
+    //   return new Tooltip(tooltipTriggerEl);
+    // });
   }, []);
 // State to manage sidebar toggle
 const [isSidebarToggled, setIsSidebarToggled] = useState(false);
