@@ -7,19 +7,19 @@ import PendingMedicines from './components/PendingMeds.js';
 import AppointmentAdmin from './components/AppointmentAdmin.js';
 import AppointmentStudent from './components/AppointmentStudent.js';
 import './App.css';
-import Login from './components/Login.js';
-import User from './components/User.js';
-import BookAppointment from './components/BookAppointment.js';
+import Login from './components/Login';
+import User from './components/User';
+import BookAppointment from './components/BookAppointment';
 import { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation.js";
-import { Header } from "./components/header.js";
-import { About } from "./components/about.js";
-import { Services } from "./components/services.js";
-import { Testimonials } from "./components/testimonials.js";
-import { Team } from "./components/Team.js";
-import { Footer } from "./components/Footer.js";
+import { Navigation } from "./components/navigation";
+import { Header } from "./components/header";
+import { About } from "./components/about";
+import { Services } from "./components/services";
+import { Testimonials } from "./components/testimonials";
+import { Team } from "./components/Team";
+import { Footer } from "./components/Footer";
 import Registration from './components/Register.js';
-import { Map } from "./components/Map.js"
+import { Map } from "./components/Map"
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 export const scroll = new SmoothScroll('a[href*="#"]', {

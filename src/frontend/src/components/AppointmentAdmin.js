@@ -1,7 +1,7 @@
 //welcoming page in admin login
 import React, { useEffect, useRef, useState}  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Dropdown, DropdownButton, Badge, Image } from 'react-bootstrap';
 import '../styles/admin.css';
@@ -246,20 +246,6 @@ const Appointment = () => {
             </Dropdown.Header>
             <Dropdown.Divider />
             <Dropdown.Item>
-              <Link className="dropdown-item d-flex align-items-center" to="/admin/profile">
-                <i className="bi bi-person"></i>
-                <span>My Profile</span>
-              </Link>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item>
-              <Link className="dropdown-item d-flex align-items-center" to="/admin/studentprofile">
-                <i className="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </Link>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item>
               <Link className="dropdown-item d-flex align-items-center" to="/Login">
                 <i className="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
@@ -303,7 +289,7 @@ const Appointment = () => {
 </div>
 
 
-            <table border="1" style={{ width: '100%', textAlign: 'left' }}>
+            <table border="1" style={{ width: '100%', textAlign: 'left',color:'black',backgroundColor:'white' }}>
                 <thead>
                     <tr>
                         <th>Email</th>

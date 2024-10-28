@@ -13,7 +13,34 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+// DELETE a specific medicine from a pending entry by ID and index
+router.delete('/medicines', async (req, res) => {
+  const { email, date, doctor, medicineIndex } = req.body; // Send these in the request body
+  try {
+    // Find the document based on email and date
+    const appointment = await Pending.findOne({ email, date, doctor });
 
+    if (!appointment) {
+      return res.status(404).json({ message: 'Appointment not found' });
+    }
+    console.log(appointment);
+    // Check if the medicine index is valid
+    if (medicineIndex < 0 || medicineIndex >= appointment.medicines.length) {
+      return res.status(400).json({ message: 'Invalid medicine index' });
+    }
+
+    // Remove the medicine from the array
+    appointment.medicines.splice(medicineIndex, 1);
+    
+    // Save the updated appointment
+    await appointment.save();
+
+    res.json({ message: 'Medicine cancelled successfully' });
+  } catch (error) {
+    console.error('Error deleting medicine:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
 // POST a new pending entry
 router.post('/', [
   body('name').notEmpty().trim().escape(),

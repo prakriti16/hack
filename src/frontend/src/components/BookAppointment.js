@@ -4,7 +4,7 @@ import { Dropdown, DropdownButton, Badge, Image } from 'react-bootstrap';
 import axios from 'axios';
 import '../styles/User.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const BookAppointment = () => {
     const [schedule, setSchedule] = useState([]);
     const [doctors, setDoctors] = useState([]);
@@ -78,7 +78,7 @@ const BookAppointment = () => {
         };
         fetchData();
     }, []);
-/*
+
 const fetchData = async () => {
     try {
         const response = await fetch('http://localhost:5000/api/schedule');
@@ -114,7 +114,7 @@ const fetchData = async () => {
         setDoctors([]); // Reset doctors
         setDates([]); // Reset dates
     }
-};*/
+};
     useEffect(() => {
         // Filter doctors based on the selected date
         const availableDoctors = schedule
@@ -276,20 +276,6 @@ const fetchData = async () => {
             <Dropdown.Header>
               <h6>User</h6>
             </Dropdown.Header>
-            <Dropdown.Divider />
-            <Dropdown.Item>
-              <Link className="dropdown-item d-flex align-items-center" to="/admin/profile">
-                <i className="bi bi-person"></i>
-                <span>My Profile</span>
-              </Link>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item>
-              <Link className="dropdown-item d-flex align-items-center" to="/admin/studentprofile">
-                <i className="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </Link>
-            </Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>
               <Link className="dropdown-item d-flex align-items-center" to="/Login">

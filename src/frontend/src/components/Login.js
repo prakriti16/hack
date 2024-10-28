@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 // Import Bootstrap CSS and Javascript
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import axios from 'axios';
 

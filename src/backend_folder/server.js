@@ -6,7 +6,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -63,7 +63,6 @@ app.get('/api/schedule', async (req, res) => {
         res.status(500).json({ error: 'Error fetching data', details: error.message }); // Include details in response
     }
 });
-
 app.get('/api/appointments', async (req, res) => {
     try {
         const appointments = await Appointment.find(); 
