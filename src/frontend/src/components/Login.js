@@ -46,9 +46,9 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/register/login', formData);
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/register/login`, formData);
       if (response.data.auth) {
-        const response2 = await axios.get(`http://localhost:5000/api/register/search?category=roll&keyword=${formData.roll}`);
+        const response2 = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/register/search?category=roll&keyword=${formData.roll}`);
         if (response2.data[0].position === 'Student' || response2.data[0].position === 'Faculty') {
           alert('Login successful as User');
           localStorage.setItem('token', response.data.token);
