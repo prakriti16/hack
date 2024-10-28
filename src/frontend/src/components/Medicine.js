@@ -2,19 +2,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Tooltip } from 'bootstrap';
 import { Link } from 'react-router-dom';
-import { Dropdown, DropdownButton, Badge, Image } from 'react-bootstrap';
+import { Dropdown, DropdownButton, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { format } from 'date-fns';
 import '../styles/admin.css';
 
 import { useNavigate } from 'react-router-dom';
 
 const Medicinedb = () => {
-  const navigate = useNavigate();
 
   const [medicines, setMedicine] = useState([]);
 
@@ -40,9 +37,9 @@ const Medicinedb = () => {
     const { name, value } = e.target;
     setNewMedicine({ ...newMedicine, [name]: value });
   };
-  const handleDateChange = (date, name) => {
-    setNewMedicine((prev) => ({ ...prev, [name]: date }));
-  };
+  // const handleDateChange = (date, name) => {
+  //   setNewMedicine((prev) => ({ ...prev, [name]: date }));
+  // };
 
 
     const handleSubmit = async (e) => {
@@ -118,9 +115,9 @@ const Medicinedb = () => {
 
   useEffect(() => {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
-      return new Tooltip(tooltipTriggerEl);
-    });
+    // const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
+    //   return new Tooltip(tooltipTriggerEl);
+    // });
   }, []);
 // State to manage sidebar toggle
 const [isSidebarToggled, setIsSidebarToggled] = useState(false);
