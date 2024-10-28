@@ -6,12 +6,12 @@ import '../styles/User.css';
 import axios from 'axios';
 const DoctorSchedule = () => {
     const [schedule, setSchedule] = useState([]);
-    const [doctors, setDoctors] = useState([]);
-    const [dates, setDates] = useState([]);
-    const [selectedDate, setSelectedDate] = useState('');
-    const [filteredDoctors, setFilteredDoctors] = useState([]);
-    const [timeSlots, setTimeSlots] = useState([]);
-    const [selectedDoctor, setSelectedDoctor] = useState('');
+    const [setDoctors] = useState([]);
+    const [setDates] = useState([]);
+    const [selectedDate] = useState('');
+    const [setFilteredDoctors] = useState([]);
+    const [setTimeSlots] = useState([]);
+    const [selectedDoctor] = useState('');
     const [profile, setProfile] = useState({});
     const [Patient, setPatient] = useState([]);
     
